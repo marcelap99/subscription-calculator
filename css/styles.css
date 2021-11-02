@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+body {
+  margin:0;
+  height: auto;
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  background: url("../img/confetti.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.container {
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 0 1em;
+  background-color: rgb(13, 72, 95);
+  color: white;
+}
+
+h1 {
+  width: 100%;
+  margin: 1em 0 2em;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.selections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.subscription-select,
+.duration-select {
+  width: 80%;
+  text-align: center;
+}
+
+select#subscription,
+select#months {
+  padding: 0.75em;
+}
+
+.subscription-select > *,
+.duration-select > * {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.congrats {
+  max-width: 90%;
+  min-width: 80%;
+  padding: 1em 0;
+  margin: 2em 0;
+  border: 4px solid rgb(89, 241, 228);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.congrats h3 {
+  display: block;
+}
+
+footer {
+  margin:20px;
+  /* border:1px solid black; */
+  height: auto;
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  color: #292929;
+  background:transparent;
+  bottom: 0;
+}
+footer a {
+  color: #292929;
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    height:87vh;
+    width:85%;
+  }
+
+  h1{
+    font-size:3em;
+    margin: 1em 0 1em;
+  }
+
+  label{
+    font-size:1.5em;
+  }
+  .subscription-select,
+  .duration-select {
+    flex-direction: column;
+    text-align: center;
+  }
+  .selections {
+    justify-content: space-around;
+  }
+
+  .congrats {
+    font-size: 1.4em;
+    margin:0px;
+  }
+
+  .congrats h3 {
+    font-size: 1.5em;
+  }
+
+  footer span{
+    font-size:1.5em;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .container{
+    width:80%;
+    margin:40px 20px;
+  }
+
+  footer span{
+    font-size:2em;
+  }
+}
